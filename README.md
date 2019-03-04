@@ -1,3 +1,8 @@
+Note
+======
+
+This is a fork of Nitrolabs/meteor-cdn without the Template helper and dependencies to Blaze. 
+
 Meteor-CDN
 ===========
 
@@ -19,17 +24,6 @@ Features
 
 ### Meteor resources are Loaded from your CDN
 CDN automatically sets WebAppInternals.setBundledJsCssPrefix to match CDN_URL so the main Meteor css and js files are loaded from your CDN.
-
-### Template helper for other static files
-CDN also provides a template helper to get the CDN_URL in your templates.
-The CDN_URL helper can not be used in the head block, because Meteor does
-evaluate helpers in the head block.
-
-```html
-<template name="MasterLayout">
-	<img src="{{CDN_URL}}/images/profile.jpg"></img>
-</template>
-```
 
 ### Getting CDN url in Javascript
 CDN exposes function which can be used to get current CDN address.
