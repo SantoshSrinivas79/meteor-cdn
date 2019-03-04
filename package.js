@@ -1,13 +1,13 @@
 Package.describe({
   name: 'thebakery:cdn',
-  version: '1.4.2',
+  version: '1.4.3',
   summary: 'Serve Meteor content from a CDN',
   git: 'https://github.com/bakery/meteor-cdn',
   documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.4.2');
+  api.versionsFrom('1.3');
   api.export('CDN','server');
   api.export('CDN','client');
   api.use('webapp','server');
